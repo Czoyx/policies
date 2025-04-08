@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: pod-ghcr-source-controller
-    image: ghcr.io/fluxcd/source-controller:replacethistag
+    image: 'ghcr.io/fluxcd/source-controller:replacethistag'

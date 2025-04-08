@@ -40,7 +40,7 @@ spec:
       patchStrategicMerge:
         metadata:
           annotations:
-            kyverno.io/created-by: "{{ request.userInfo | to_string(@) }}"
+            kyverno.io/created-by: "{{ request.userInfo.{username: username, groups: groups} | to_string(@) }}"
   - name: prevent-updates-deletes-userinfo-annotations
     match:
       any:
